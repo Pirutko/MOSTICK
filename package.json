@@ -10,5 +10,5 @@
     "@netlify/database": "latest",
     "postgres": "latest"
   },
-  "version": "5.2.5"
+  "version": "5.2.1"
 }
