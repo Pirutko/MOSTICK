@@ -1,0 +1,14 @@
+{
+  "name": "mostik-netlify",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo MOSTIK Netlify build ready"
+  },
+  "dependencies": {
+    "@netlify/functions": "latest",
+    "@netlify/database": "latest",
+    "postgres": "latest"
+  },
+  "version": "5.2.5"
+}

@@ -1,0 +1,7 @@
+MOSTIK v5.2.4
+- Added 7 additional animal profile icons (8–14).
+- Animal icon picker now contains 14 icons.
+- New icons are optimized WebP 160×160 assets.
+- Random fallback and backend validation now support all 14 icons.
+- Service Worker pre-caches all 14 animal icons.
+- Existing animals keep their selected icon.

@@ -1,0 +1,12 @@
+MOSTIK 5.1.5 — AUTH 500 FIX
+
+Fixed login/registration server errors when the production Netlify Database exists but auth migrations were not applied.
+
+Changes:
+- api.mjs now bootstraps the required auth tables/columns before auth endpoints run.
+- Added migration 020_auth_schema_repair.sql.
+- Added demo_role column guard for sessions_auth.
+- Hardened password hash comparison so malformed stored hashes cannot crash the function.
+- Real server/database exceptions now return HTTP 500 instead of 502.
+
+Deploy the patch to Netlify. The auth schema guard runs automatically on the first auth request; the migration is also included for normal DB migration workflows.
